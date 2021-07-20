@@ -1,0 +1,248 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+\setlength{\makecvtitlenamewidth}{6cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\renewcommand*{\namefont}{\fontsize{23}{25}\mdseries\upshape}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Matteo} % Your first name
+\familyname{Savatteri} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Via Francesco Petrarca, 1}{Cogliate (MB) (20815), Italia}
+\mobile{+39 3465225442}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{matteo.savatteri@cryptolab.net}
+\homepage{github.com/savaroskij}{github.com/savaroskij} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{Data di nascita: 1994-11-02}
+\photo[90pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-2] % Dummy text
+%\lipsum[4] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+%
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Titoli di Studio}
+
+\cventry{2017--2021}{Laurea Magistrale in Fisica}{Universit\`a degli studi
+di Milano}{}{110/110 \textit{cum laude}}{In ambito astrofisico,
+studio sperimentale e computazionale di segnali radio.}  % Arguments not required can be left empty
+\cventry{2013--2016}{Laurea Triennale in Fisica}{Universit\`a degli studi
+di Milano}{}{109/110}{Solida preparazione in matematica, fisica e applicazione
+del pensiero astratto.}
+\cventry{2008--2013}{Liceo Scientifico}{Collegio Arcivescovile
+Castelli}{Saronno (VA)}{94/100}{}
+
+\subsection{Tesi di Laurea Magistrale (2021-07-06)}
+
+\cvitem{Title}{\emph{Atmospheric Effects in Ground-Based Observations of
+the Cosmic Microwave Background}}
+\cvitem{Description}{Sviluppo di un codice per simulare effetti atmosferici
+nella zona dell'``Observatorio del Teide'' a Tenerife. Il codice \`e stato
+sviluppato per permettere l'esecuzione parallela (MPI) presso un cluster
+HPC (INDACO, UNIMI), mediante l'utilizzo di una tecnologia di
+containerizzazione (Singularity).}
+
+\subsection{Tesi di Laurea Triennale (2016-10-17)}
+
+\cvitem{Title}{\emph{Ruolo dell'Effetto Tunnel Anelastico dell'Elettrone
+nella Percezione Olfattiva}}
+\cvitem{Description}{Studio teorico del ruolo dell'elettrone nell'ambito
+della percezione olfattiva.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Esperienze}
+
+\subsection{Esperienza Lavorativa}
+
+\cventry{2018--2019}{Amministratore di Sistema}{Laboratorio Computazionale
+LCM}{UNIMI}{}{Amministrazione software e hardware della farm computazionale
+basata su sistema operativo Debian GNU/Linux e finanziata dal gruppo di
+ricerca sulle fisica della alte energie presso il dipartimento di fisica
+``Aldo Pontremoli''.  Amministrazione software e hardware del cluster
+computazionale ad uso didattico del laboratorio di LCM, basato sui sistemi
+operativi Debian/CentOS GNU/Linux. Organizzazione dell'Help Desk IT per
+gli studenti.}
+
+%------------------------------------------------
+
+\cventry{2013--present}{Tutor Privato}{}{Saronno (VA) e dintorni}{}{Lezioni
+private di matematica e fisica per studenti di scuola superiore.}
+
+%------------------------------------------------
+
+\subsection{Altre attivit\`a}
+
+\cventry{2011--2019}{Educatore Volontario}{Oratorio S.S. Pietro e Paolo}{Saronno
+(VA)}{}{Figura di supporto allo sviluppo etico di studenti di scuola
+secondaria di primo e secondo grado.}
+
+\cventry{2018--present}{Volontario presso Help Desk IT}{Laboratorio
+Computazionale di LCM}{UNIMI}{}{Supporto tecnico fornito durante il mio
+tempo libero a studenti con difficolt\`a riguardanti il sistema operativo
+GNU/Linux o problemi riguardanti l'hardware di computer. Guida ai nuovi
+assunti del laboratorio in quanto ex-membro dello staff.}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Awards}
+%
+%\cvitem{2011}{School of Business Postgraduate Scholarship}
+%\cvitem{2010}{Top Achiever Award -- Commerce}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Abilit\`a Riguardanti i Computer}
+
+\cvitem{Sistemi Operativi}{\texttt{GNU/Linux} (avanzato), \texttt{OpenBSD}
+(avanzato), \texttt{FreeBSD} (base), \textsc{Microsoft Windows 10}
+(uso quotidiano).}
+\cvitem{Linguaggi di Programmazione/ Markup}{\texttt{sh} and \texttt{bash} (avanzato),
+\texttt{awk} (base), \texttt{C}/\texttt{C++} (intermedio), \texttt{Python}
+(intermedio), \LaTeX\ (avanzato), \texttt{HTML} (intermedio), \texttt{javascript} (base),
+\texttt{markdown},
+\texttt{x86\_64 Assembler (AT\&T)} (base), SQL (MariaDB, esperienza da
+sysadmin, installazione, creazione database e tabelle, integrazione con
+servizi web, etc.).}
+\vspace{0.5cm}
+\cvitem{}{Esperienza base su reti e apparati di rete (Switch, hub,
+router, firewall, NAS).}
+\cvitem{}{Esperienza base su manutenzione hardware di computer.}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Abilit\`a di Comunicazione e Sociali}
+
+\cvitem{}{Conferenze/Seminari presso UNIMI, dipartimento di fisica ``Aldo Pontremoli'':}
+\cvitem{2021}{``OpenLab Virtuale: CLI Essentials \& Shell Programming''}
+\cvitem{2021}{``OpenLab Virtuale: GNU/Linux intro, tips and tricks''}
+\cvitem{2019}{``Free Software \& Code Digging''}
+
+\vspace{0.5cm}
+
+\cvitem{2009--2010}{Rappresentante degli studenti presso ``Collegio Arcivescovile
+Castelli'', Saronno}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Lingue}
+
+\cvitemwithcomment{Italiano}{Madrelingua}{}
+\cvitemwithcomment{Inglese}{Intermedio}{Livello B2}
+\cvitemwithcomment{Spagnolo}{Base}{Livello B1}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interessi}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Tecnologia e Computer}{Canto Corale}
+\cvlistdoubleitem{Escursionismo}{Anime}
+
+%----------------------------------------------------------------------------------------
+
+\vfill
+
+\noindent\rule{5cm}{1pt}
+
+Autorizzo il trattamento dei miei dati personali ai sensi del Dlgs 196 del
+30 giugno 2003 e dell’art. 13 GDPR (Regolamento UE 2016/679) ai
+fini della ricerca e selezione del personale.
+
+\vspace{1cm}
+
+Data: \today \hspace{5cm} Firma:
+
+\vspace{1cm}
+
+\end{document}
